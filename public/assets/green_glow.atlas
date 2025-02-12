@@ -1,0 +1,83 @@
+
+green_glow.png
+size: 1871,763
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Light_1
+  rotate: true
+  xy: 1063, 554
+  size: 207, 673
+  orig: 207, 673
+  offset: 0, 0
+  index: -1
+Light_2
+  rotate: false
+  xy: 1662, 273
+  size: 207, 279
+  orig: 207, 279
+  offset: 0, 0
+  index: -1
+Light_3
+  rotate: true
+  xy: 1537, 64
+  size: 207, 312
+  orig: 207, 312
+  offset: 0, 0
+  index: -1
+Light_4
+  rotate: true
+  xy: 2, 2
+  size: 207, 697
+  orig: 207, 697
+  offset: 0, 0
+  index: -1
+Light_5
+  rotate: true
+  xy: 2, 211
+  size: 366, 741
+  orig: 366, 741
+  offset: 0, 0
+  index: -1
+Light_6
+  rotate: true
+  xy: 701, 13
+  size: 62, 300
+  orig: 62, 300
+  offset: 0, 0
+  index: -1
+Light_7
+  rotate: true
+  xy: 1046, 41
+  size: 62, 383
+  orig: 62, 383
+  offset: 0, 0
+  index: -1
+sparkle_1
+  rotate: false
+  xy: 745, 77
+  size: 299, 500
+  orig: 299, 500
+  offset: 0, 0
+  index: -1
+sparkle_2
+  rotate: true
+  xy: 1046, 297
+  size: 255, 614
+  orig: 255, 614
+  offset: 0, 0
+  index: -1
+sparkle_3
+  rotate: true
+  xy: 1046, 105
+  size: 190, 489
+  orig: 190, 489
+  offset: 0, 0
+  index: -1
+sparkle_5
+  rotate: true
+  xy: 2, 579
+  size: 182, 1059
+  orig: 182, 1059
+  offset: 0, 0
+  index: -1

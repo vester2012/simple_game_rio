@@ -1,0 +1,280 @@
+
+bg_game.png
+size: 4093,3225
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Ellipse_1_glow
+  rotate: false
+  xy: 584, 2207
+  size: 707, 707
+  orig: 707, 707
+  offset: 0, 0
+  index: -1
+Ellipse_2
+  rotate: false
+  xy: 2117, 1126
+  size: 905, 905
+  orig: 905, 905
+  offset: 0, 0
+  index: -1
+Ellipse_2_glow
+  rotate: false
+  xy: 2144, 189
+  size: 927, 927
+  orig: 929, 929
+  offset: 1, 1
+  index: -1
+Ellipse_3
+  rotate: false
+  xy: 1723, 2586
+  size: 430, 430
+  orig: 430, 430
+  offset: 0, 0
+  index: -1
+Ellipse_4
+  rotate: false
+  xy: 2155, 2468
+  size: 548, 548
+  orig: 548, 548
+  offset: 0, 0
+  index: -1
+Ellipse_4_glow
+  rotate: false
+  xy: 2, 2334
+  size: 580, 580
+  orig: 582, 582
+  offset: 1, 1
+  index: -1
+letter_1
+  rotate: true
+  xy: 2772, 2956
+  size: 168, 215
+  orig: 168, 215
+  offset: 0, 0
+  index: -1
+letter_1_glow
+  rotate: true
+  xy: 3790, 2865
+  size: 259, 301
+  orig: 267, 312
+  offset: 3, 5
+  index: -1
+letter_2
+  rotate: false
+  xy: 2989, 2952
+  size: 225, 172
+  orig: 226, 173
+  offset: 0, 1
+  index: -1
+letter_2_glow
+  rotate: false
+  xy: 3487, 2874
+  size: 301, 250
+  orig: 311, 258
+  offset: 4, 3
+  index: -1
+letter_3
+  rotate: false
+  xy: 3216, 2901
+  size: 269, 223
+  orig: 269, 223
+  offset: 0, 0
+  index: -1
+letter_3_glow
+  rotate: false
+  xy: 1378, 2713
+  size: 343, 303
+  orig: 353, 310
+  offset: 5, 3
+  index: -1
+letters_2
+  rotate: true
+  xy: 2, 3144
+  size: 79, 1392
+  orig: 80, 1392
+  offset: 1, 0
+  index: -1
+letters_2_glow
+  rotate: true
+  xy: 2, 3044
+  size: 98, 1412
+  orig: 104, 1418
+  offset: 3, 3
+  index: -1
+letters_3
+  rotate: true
+  xy: 1416, 3018
+  size: 106, 1354
+  orig: 108, 1354
+  offset: 1, 0
+  index: -1
+letters_3_glow
+  rotate: true
+  xy: 2, 2916
+  size: 126, 1374
+  orig: 132, 1379
+  offset: 3, 2
+  index: -1
+letters_4
+  rotate: false
+  xy: 1396, 3144
+  size: 1254, 79
+  orig: 1254, 79
+  offset: 0, 0
+  index: -1
+letters_4_glow
+  rotate: false
+  xy: 2652, 3126
+  size: 1273, 97
+  orig: 1276, 101
+  offset: 2, 2
+  index: -1
+letters_5
+  rotate: false
+  xy: 2705, 2033
+  size: 845, 839
+  orig: 845, 839
+  offset: 0, 0
+  index: -1
+letters_5_glow
+  rotate: false
+  xy: 3024, 1118
+  size: 917, 913
+  orig: 929, 925
+  offset: 6, 6
+  index: -1
+letters_L
+  rotate: true
+  xy: 2, 1739
+  size: 466, 2083
+  orig: 466, 2083
+  offset: 0, 0
+  index: -1
+letters_L_glow
+  rotate: true
+  xy: 2, 770
+  size: 493, 2111
+  orig: 496, 2114
+  offset: 2, 1
+  index: -1
+letters_R
+  rotate: true
+  xy: 2, 1265
+  size: 472, 2113
+  orig: 472, 2113
+  offset: 0, 0
+  index: -1
+letters_R_glow
+  rotate: true
+  xy: 2, 270
+  size: 498, 2140
+  orig: 502, 2144
+  offset: 2, 2
+  index: -1
+light_2
+  rotate: true
+  xy: 3073, 2
+  size: 1114, 964
+  orig: 1376, 1374
+  offset: 233, 219
+  index: -1
+
+bg_game2.png
+size: 3380,3388
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Ellipse_big_1
+  rotate: false
+  xy: 2, 2
+  size: 3376, 3384
+  orig: 3386, 3394
+  offset: 5, 5
+  index: -1
+
+bg_game3.png
+size: 3919,3728
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Rectangle_3
+  rotate: false
+  xy: 1815, 2
+  size: 2102, 2102
+  orig: 2102, 2102
+  offset: 0, 0
+  index: -1
+light_1
+  rotate: true
+  xy: 2, 2494
+  size: 1232, 2044
+  orig: 1276, 2160
+  offset: 44, 58
+  index: -1
+triangle
+  rotate: false
+  xy: 2048, 2106
+  size: 1787, 1620
+  orig: 1787, 1620
+  offset: 0, 0
+  index: -1
+triangle_glow
+  rotate: false
+  xy: 2, 843
+  size: 1811, 1649
+  orig: 1815, 1652
+  offset: 2, 1
+  index: -1
+
+bg_game4.png
+size: 2162,2162
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Rectangle_3_glow
+  rotate: false
+  xy: 2, 2
+  size: 2158, 2158
+  orig: 2162, 2162
+  offset: 2, 2
+  index: -1
+
+bg_game5.png
+size: 2828,2218
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+star
+  rotate: false
+  xy: 2, 2
+  size: 2824, 2214
+  orig: 2824, 2214
+  offset: 0, 0
+  index: -1
+
+bg_game6.png
+size: 2875,2264
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+star_glow
+  rotate: false
+  xy: 2, 2
+  size: 2871, 2260
+  orig: 2877, 2266
+  offset: 3, 3
+  index: -1
+
+bg_game7.png
+size: 3802,2284
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+Back
+  rotate: false
+  xy: 2, 2
+  size: 3798, 2280
+  orig: 3798, 2280
+  offset: 0, 0
+  index: -1
