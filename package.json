@@ -18,18 +18,28 @@
         "phaser",
         "phaser3",
         "react",
-        "vite"
+        "vite",
+        "express",
+        "game-development",
+        "html5-game"
     ],
     "scripts": {
         "dev": "node log.js dev & vite --config vite/config.dev.mjs",
         "build": "node log.js build & vite build --config vite/config.prod.mjs",
         "dev-nolog": "vite --config vite/config.dev.mjs",
-        "build-nolog": "vite build --config vite/config.prod.mjs"
+        "build-nolog": "vite build --config vite/config.prod.mjs",
+        "preview": "vite preview",
+        "lint": "eslint src --ext .js,.jsx",
+        "format": "prettier --write src",
+        "deploy": "surge dist"
     },
     "dependencies": {
-        "phaser": "^3.87.0",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1"
+        "phaser": "^3.88.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "surge": "^0.24.6",
+        "express": "^4.17.1",
+        "eventemitter3": "^5.0.1" 
     },
     "devDependencies": {
         "@types/react": "^18.3.3",
@@ -40,6 +50,17 @@
         "eslint-plugin-react-hooks": "^4.6.2",
         "eslint-plugin-react-refresh": "^0.4.7",
         "terser": "^5.28.1",
-        "vite": "^5.3.1"
-    }
+        "vite": "^5.3.1",
+        "prettier": "^3.2.5",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=9.0.0"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+    ]
 }

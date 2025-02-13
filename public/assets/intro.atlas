@@ -1,5 +1,5 @@
 
-intro.png
+intro.webp
 size: 4096,3364
 format: RGBA4444
 filter: Linear,Linear
@@ -964,7 +964,7 @@ wrist_3 L
   offset: 0, 0
   index: -1
 
-intro2.png
+intro2.webp
 size: 3911,2990
 format: RGBA4444
 filter: Linear,Linear
@@ -991,7 +991,7 @@ table
   offset: 0, 0
   index: -1
 
-intro3.png
+intro3.webp
 size: 2462,2329
 format: RGBA4444
 filter: Linear,Linear
