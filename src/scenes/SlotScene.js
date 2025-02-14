@@ -73,20 +73,20 @@ export class SlotScene extends Scene {
     constructor() {
         super({key: "SlotScene"});
     }
-    
+
     create () {
         const centerX = scrmng.getCenterX();
         const centerY = scrmng.getCenterY();
         const nameVideo = getVideo(videoDistrib);
 
         console.log(nameVideo);
-        
-        const video = this.add.video(centerX, centerY, nameVideo).setOrigin(0.5, 0.5).setScale(1.45);
+
+        const video = this.add.video(centerX, centerY, nameVideo).setOrigin(0.5, 0.5).setScale(1.44, 1.43);
 
         this.cameras.main.fadeIn(300, 255, 255, 255);
-        
+
         video.play(); // Запускаем текущее видео
-        
+
         const videoTime = 8000;
         const hideSceneTime = 300;
 

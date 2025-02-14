@@ -14,8 +14,8 @@ export class VideoScene extends Scene {
 
         // Создаем массив видео
         const videos = [
-            this.add.video(centerX, centerY, 'belatra_video').setOrigin(0.5, 0.5).setVisible(false),
-            this.add.video(centerX, centerY, 'video_main_page').setOrigin(0.5, 0.5).setVisible(false)
+            this.add.video(centerX, centerY, 'belatra_video').setOrigin(0.5, 0.5).setVisible(false).setScale(2.9),
+            this.add.video(centerX, centerY, 'video_main_page').setOrigin(0.5, 0.5).setVisible(false).setScale(2.9)
         ];
 
         this.videos = videos;

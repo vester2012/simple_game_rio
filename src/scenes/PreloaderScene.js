@@ -24,14 +24,17 @@ export class PreloaderScene extends Scene {
         //  Load the assets for the game - Replace with your own assets
         this.load.setPath('./src/assets/');
 
-        this.load.video('belatra_video', 'belatra-intro.mp4');
-        this.load.video('video_main_page', 'video-main-page.mp4');
         this.load.image('back', 'back.jpg');
         this.load.spine('background_base_SPO', 'background_base.json', 'background_base.atlas');
         this.load.spine('intro_SPO', 'intro.json', 'intro.atlas');
         this.load.spine('booster_SPO', 'booster.json', 'booster.atlas');
 
+
         this.load.setPath('./src/assets/video/');
+
+        this.load.video('belatra_video', 'belatra-intro.webm');
+        this.load.video('video_main_page', 'video-main-page.webm');
+
         this.load.video('00', 'WIN_MAKE_IT_GOLD.webm');
         this.load.video('01', 'Você é o jackpot.webm');
         this.load.video('02', 'Você se torna batata.webm');
