@@ -25,9 +25,12 @@ export class PreloaderScene extends Scene {
         this.load.setPath('./src/assets/');
 
         this.load.image('back', 'back.jpg');
-        this.load.spine('background_base_SPO', 'background_base.json', 'background_base.atlas');
-        this.load.spine('intro_SPO', 'intro.json', 'intro.atlas');
-        this.load.spine('booster_SPO', 'booster.json', 'booster.atlas');
+        this.load.image('start', 'start.webp');
+        this.load.image('finish', 'finish.webp');
+
+        this.load.spine('background_base_SPO', 'background_base.json', 'background_base.txt');
+        this.load.spine('intro_SPO', 'intro.json', 'intro.txt');
+        this.load.spine('booster_SPO', 'booster.json', 'booster.txt');
 
 
         this.load.setPath('./src/assets/video/');
@@ -89,18 +92,16 @@ export class PreloaderScene extends Scene {
     }
 
     create () {
-        this.input.keyboard.on('keydown', () => {
-            this.input.keyboard.off('keydown');
+        this.input.keyboard.on('keydown-SPACE', () => {
+            this.input.keyboard.off('keydown-SPACE');
 
             if (!this.scale.isFullscreen) {
                 this.scale.startFullscreen(); // Включить полноэкранный режим
-            } else {
-                this.scale.stopFullscreen(); // Выйти из полноэкранного режима
             }
 
             this.scene.start('VideoScene');
         });
 
-        this.scene.start('VideoScene');
+        //this.scene.start('VideoScene');
     }
 }

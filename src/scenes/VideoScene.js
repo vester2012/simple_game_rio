@@ -52,12 +52,6 @@ export class VideoScene extends Scene {
             // Останавливаем все видео
             videos.forEach(video => video.stop());
 
-            if (!this.scale.isFullscreen) {
-                this.scale.startFullscreen(); // Включить полноэкранный режим
-            } else {
-                this.scale.stopFullscreen(); // Выйти из полноэкранного режима
-            }
-
             this.scene.start('GameScene');
         });
     }

@@ -15,15 +15,10 @@ export class GameScene extends Scene {
 
         const girlAnim = this.add.spine(centerX + 10, centerY + 100, 'intro_SPO', 'intro', true).setScale(0.75);
 
-        this.createText();
+        const txtImage = this.add.image(centerX, centerY + 800, 'start').setOrigin(0.5, 0.5).setScale(0.75);
 
         this.input.keyboard.on('keydown-SPACE', () => {
-
-            /*if (!this.scale.isFullscreen) {
-                this.scale.startFullscreen(); // Включить полноэкранный режим
-            } else {
-                this.scale.stopFullscreen(); // Выйти из полноэкранного режима
-            }*/
+            this.input.keyboard.off('keydown-SPACE');
 
             this.timer.destroy();
             this.timer = null;
@@ -31,7 +26,7 @@ export class GameScene extends Scene {
             this.add.spine(centerX + 10, centerY + 100, 'booster_SPO', 'booster_hs').setScale(1.3);
 
             this.tweens.add({
-                targets: girlAnim,
+                targets: [girlAnim, txtImage],
                 alpha: 0,
                 ease: 'Power1',
                 duration: 500,
@@ -58,30 +53,5 @@ export class GameScene extends Scene {
         });
 
         this.cameras.main.fadeIn(300, 0, 0, 0);
-    }
-
-    createText () {
-        const centerX = scrmng.getCenterX();
-        const centerY = scrmng.getCenterY();
-
-        // Добавляем текст на сцену
-        const text = this.add.text(centerX, centerY + 240, 'GET YOUR FORTUNE\nTEST YOUR LUCK!', {
-            font: '40px Arial',
-            fill: '#ffffff', // Это значение заменится градиентом
-            align: 'center'
-        });
-
-        // Получаем контекст Canvas 2D
-        const canvas = text.canvas;
-        const context = canvas.getContext('2d');
-
-        // Создаем градиент
-        const gradient = context.createLinearGradient(0, 0, 0, text.height);
-        gradient.addColorStop(0, '#FFD700'); // Светло-золотой
-        gradient.addColorStop(1, '#FFA500'); // Золотой
-
-        // Устанавливаем градиент в текст
-        text.setFill(gradient);
-        text.setOrigin(0.5, 0.5);
     }
 }

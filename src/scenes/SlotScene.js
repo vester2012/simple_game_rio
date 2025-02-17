@@ -56,18 +56,21 @@ const videoDistrib = [
 ];
 
 const getVideo = (distrib) => {
-    // Создаем взвешенный массив
-    const weightedArray = distrib.reduce((acc, [value, probability]) => {
-        for (let i = 0; i < probability; i++) {
-            acc.push(value);
-        }
-        return acc;
-    }, []);
+    // Суммируем все вероятности
+    const totalWeight = distrib.reduce((sum, [, probability]) => sum + probability, 0);
 
-    // Выбираем случайный элемент
-    const randomIndex = Math.floor(Math.random() * weightedArray.length);
-    return weightedArray[randomIndex];
-}
+    // Генерируем случайное число от 0 до общей суммы вероятностей
+    const random = Math.random() * totalWeight;
+
+    // Проходим по распределению и выбираем значение на основе вероятности
+    let cumulativeWeight = 0;
+    for (const [value, probability] of distrib) {
+        cumulativeWeight += probability;
+        if (random < cumulativeWeight) {
+            return value;
+        }
+    }
+};
 
 export class SlotScene extends Scene {
     constructor() {
@@ -90,11 +93,26 @@ export class SlotScene extends Scene {
         const videoTime = 8000;
         const hideSceneTime = 300;
 
-        this.time.delayedCall(videoTime - hideSceneTime, () => {
-            this.cameras.main.fadeOut(300, 0, 0, 0); // Затемнение экрана
-            this.time.delayedCall(300, () => {
-                this.scene.start('GameScene');
+
+
+        if (nameVideo === '50' || nameVideo === 50) {
+            this.time.delayedCall(videoTime - hideSceneTime - 1500, () => {
+                this.add.spine(centerX + 10, centerY + 100, 'intro_SPO', 'winbanner4').setScale(0.75);
+
+                this.add.image(centerX, centerY + 600, 'finish').setOrigin(0.5, 0.5).setScale(0.75);
+
+                this.time.delayedCall(3333, () => {
+                    this.scene.start('GameScene');
+                });
             });
-        });
+
+        } else {
+            this.time.delayedCall(videoTime - hideSceneTime, () => {
+                this.cameras.main.fadeOut(300, 0, 0, 0); // Затемнение экрана
+                this.time.delayedCall(300, () => {
+                    this.scene.start('GameScene');
+                });
+            });
+        }
     }
 }
