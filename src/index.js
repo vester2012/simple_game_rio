@@ -33,3 +33,31 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
+
+// Устанавливаем ширину и высоту контейнера и канваса
+const phaserElement = document.getElementById('phaser');
+
+// Функция для принудительной установки ширины и высоты
+const enforceDimensions = () => {
+    // Для контейнера
+    phaserElement.style.width = '100%';
+    phaserElement.style.height = '100%';
+
+    // Для канваса
+    const canvas = phaserElement.querySelector('canvas');
+    if (canvas) {
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+    }
+};
+
+// Используем MutationObserver для отслеживания изменений стилей
+const observer = new MutationObserver(() => {
+    enforceDimensions(); // Принудительно устанавливаем размеры
+});
+
+// Настраиваем наблюдение за изменениями стилей контейнера
+observer.observe(phaserElement, { attributes: true, attributeFilter: ['style'] });
+
+// Сразу задаём размеры после запуска игры
+game.events.once('ready', enforceDimensions);

@@ -1,18 +1,11 @@
-.square {
-    position: relative;
-    display: block;
+#phaser {
+    display: flex; /* Контейнер остаётся гибким */
+    justify-content: center; /* Центрирование канваса */
+    align-items: center; /* Центрирование канваса */
+    /* Убираем width и height, если они задаются автоматически */
 }
 
-.square:after {
-    content: '';
-    display: block;
-    padding-top: 100%;
-}
-
-.content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+canvas {
+    width: 100% !important;
+    height: 100% !important;
 }

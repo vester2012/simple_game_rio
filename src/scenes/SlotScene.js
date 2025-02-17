@@ -52,7 +52,7 @@ const videoDistrib = [
     ['47', 1],
     ['48', 1],
     ['49', 1],
-    ['50', 1]
+    ['50', 5]
 ];
 
 const getVideo = (distrib) => {

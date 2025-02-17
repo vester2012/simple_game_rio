@@ -14,8 +14,8 @@ export class VideoScene extends Scene {
 
         // Создаем массив видео
         const videos = [
-            this.add.video(centerX, centerY, 'belatra_video').setOrigin(0.5, 0.5).setVisible(false).setScale(2.9),
-            this.add.video(centerX, centerY, 'video_main_page').setOrigin(0.5, 0.5).setVisible(false).setScale(2.9)
+            this.add.video(centerX, centerY, 'belatra_video').setOrigin(0.5, 0.5).setVisible(false).setScale(2.9, 3),
+            this.add.video(centerX, centerY, 'video_main_page').setOrigin(0.5, 0.5).setVisible(false).setScale(2.9, 3)
         ];
 
         this.videos = videos;
@@ -47,7 +47,8 @@ export class VideoScene extends Scene {
         playNextVideo();
 
         // Добавляем обработчик перехода по нажатию клавиши
-        this.input.keyboard.on('keydown', () => {
+        this.input.keyboard.on('keydown-SPACE', () => {
+            this.input.keyboard.off('keydown-SPACE');
             // Останавливаем все видео
             videos.forEach(video => video.stop());
 
