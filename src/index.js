@@ -1,4 +1,3 @@
-import Phaser from 'phaser';
 import { GameScene } from './scenes/GameScene.js';
 import { VideoScene } from './scenes/VideoScene.js';
 import { PreloaderScene } from './scenes/PreloaderScene.js';
@@ -31,6 +30,8 @@ const config = {
         ]
     }
 };
+
+console.log(Phaser)
 
 const game = new Phaser.Game(config);
 
