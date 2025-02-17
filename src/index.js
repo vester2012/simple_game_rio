@@ -3,7 +3,6 @@ import { VideoScene } from './scenes/VideoScene.js';
 import { PreloaderScene } from './scenes/PreloaderScene.js';
 import {SlotScene} from "./scenes/SlotScene.js";
 import ScreenManager, {scrmng} from "./core/scrmng.js";
-
 new ScreenManager();
 
 // Find out more information about the GameScene Config at:
