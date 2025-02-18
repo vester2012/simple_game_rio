@@ -12,7 +12,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname), // Указывает на корень проекта
         },
-        port: 3000,
+        port: 8080,
         open: true, // Открывает браузер автоматически
     },
     module: {

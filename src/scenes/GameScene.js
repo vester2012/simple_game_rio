@@ -40,16 +40,13 @@ export class GameScene extends Scene {
                     this.scene.start('SlotScene');
                 });
             });
-
-            //this.scene.start('SlotScene');
-
         });
 
         this.timer = this.time.delayedCall(60000 * 3, () => {
             this.timer.destroy();
             this.timer = null;
 
-            this.scene.start('MainMenu');
+            this.scene.start('VideoScene');
         });
 
         this.cameras.main.fadeIn(300, 0, 0, 0);
