@@ -1,5 +1,6 @@
 import { Scene } from 'phaser';
 import {scrmng} from "../core/scrmng.js";
+import {effects} from "../core/effects.js";
 
 export class GameScene extends Scene {
     constructor () {
@@ -16,6 +17,8 @@ export class GameScene extends Scene {
         const girlAnim = this.add.spine(centerX + 10, centerY + 100, 'intro_SPO', 'intro', true).setScale(0.75);
 
         const txtImage = this.add.image(centerX, centerY + 800, 'start').setOrigin(0.5, 0.5).setScale(0.75);
+
+        effects.animationText(this, txtImage, centerY + 800, centerY + 780);
 
         this.input.keyboard.on('keydown-SPACE', () => {
             this.input.keyboard.off('keydown-SPACE');

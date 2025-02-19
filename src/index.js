@@ -3,7 +3,10 @@ import { VideoScene } from './scenes/VideoScene.js';
 import { PreloaderScene } from './scenes/PreloaderScene.js';
 import {SlotScene} from "./scenes/SlotScene.js";
 import ScreenManager, {scrmng} from "./core/scrmng.js";
+import EffectsManager from "./core/effects.js";
+
 new ScreenManager();
+new EffectsManager()
 
 // Find out more information about the GameScene Config at:
 // https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig

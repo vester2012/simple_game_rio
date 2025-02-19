@@ -1,5 +1,6 @@
 import {Scene} from "phaser";
 import {scrmng} from "../core/scrmng.js";
+import {effects} from "../core/effects.js";
 
 const videoDistrib = [
     ['00', 1],
@@ -90,16 +91,16 @@ export class SlotScene extends Scene {
 
         video.play(); // Запускаем текущее видео
 
-        const videoTime = 8000;
-        const hideSceneTime = 300;
-
-
+        const videoTime = 8200;
+        const hideSceneTime = 0;
 
         if (nameVideo === '50' || nameVideo === 50) {
-            this.time.delayedCall(videoTime - hideSceneTime - 1500, () => {
+            this.time.delayedCall(videoTime - hideSceneTime, () => {
                 this.add.spine(centerX + 10, centerY + 100, 'intro_SPO', 'winbanner4').setScale(0.75);
 
-                this.add.image(centerX, centerY + 600, 'finish').setOrigin(0.5, 0.5).setScale(0.75);
+                const txtImage = this.add.image(centerX, centerY + 600, 'finish').setOrigin(0.5, 0.5).setScale(0.75);
+
+                effects.animationText(this, txtImage, centerY + 600, centerY + 580);
 
                 this.time.delayedCall(3333, () => {
                     this.scene.start('GameScene');
@@ -108,8 +109,8 @@ export class SlotScene extends Scene {
 
         } else {
             this.time.delayedCall(videoTime - hideSceneTime, () => {
-                this.cameras.main.fadeOut(300, 0, 0, 0); // Затемнение экрана
-                this.time.delayedCall(300, () => {
+                this.cameras.main.fadeOut(hideSceneTime, 0, 0, 0); // Затемнение экрана
+                this.time.delayedCall(hideSceneTime, () => {
                     this.scene.start('GameScene');
                 });
             });
