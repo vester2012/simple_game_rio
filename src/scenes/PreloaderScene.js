@@ -33,13 +33,13 @@ export class PreloaderScene extends Scene {
         this.load.spine('booster_SPO', 'booster.json', 'booster.txt');
 
         this.load.audio('spin_mig', [ 'spin_mig.mp3' ]);
-
+        this.load.audio('spin_mig_win', [ 'spin_mig_win.mp3' ]);
+        this.load.audio('spin_mig_congratulation', [ 'spin_mig_congratulation.mp3' ]);
 
         this.load.setPath('./src/assets/video/');
 
         this.load.video('belatra_video', 'belatra-intro.webm');
         this.load.video('video_main_page', 'video-main-page.webm');
-
         this.load.video('00', '0.webm');
         this.load.video('01', '1.webm');
         this.load.video('02', '2.webm');
