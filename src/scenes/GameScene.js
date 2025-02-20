@@ -11,6 +11,8 @@ export class GameScene extends Scene {
         const centerX = scrmng.getCenterX();
         const centerY = scrmng.getCenterY();
 
+        const spin_mig = this.sound.add('spin_mig');
+
         this.add.image(centerX, centerY, 'back').setOrigin(0.5, 0.5).setScale(3);
         this.add.spine(centerX, 2166, 'background_base_SPO', 'live', true).setScale(2);
 
@@ -22,6 +24,8 @@ export class GameScene extends Scene {
 
         this.input.keyboard.on('keydown-SPACE', () => {
             this.input.keyboard.off('keydown-SPACE');
+
+            spin_mig.play();
 
             this.timer.destroy();
             this.timer = null;

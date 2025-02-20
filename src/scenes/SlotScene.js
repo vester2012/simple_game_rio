@@ -83,9 +83,10 @@ export class SlotScene extends Scene {
         const centerY = scrmng.getCenterY();
         const nameVideo = getVideo(videoDistrib);
 
-        console.log(nameVideo);
 
         const video = this.add.video(centerX, centerY, nameVideo).setOrigin(0.5, 0.5).setScale(1.44, 1.43);
+
+
 
         this.cameras.main.fadeIn(300, 255, 255, 255);
 

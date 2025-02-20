@@ -32,6 +32,8 @@ export class PreloaderScene extends Scene {
         this.load.spine('intro_SPO', 'intro.json', 'intro.txt');
         this.load.spine('booster_SPO', 'booster.json', 'booster.txt');
 
+        this.load.audio('spin_mig', [ 'spin_mig.mp3' ]);
+
 
         this.load.setPath('./src/assets/video/');
 
