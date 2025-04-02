@@ -53,7 +53,7 @@ const videoDistrib = [
     ['47', 1],
     ['48', 1],
     ['49', 1],
-    ['50', 10]
+    ['50', 21]
 ];
 
 const getVideo = (distrib) => {
@@ -130,7 +130,7 @@ export class GameScene extends Scene {
             });
         });
 
-        this.timer = this.time.delayedCall(60000 * 3, () => {
+        this.timer = this.time.delayedCall(60000 * 8, () => {
             this.timer.destroy();
             this.timer = null;
 
