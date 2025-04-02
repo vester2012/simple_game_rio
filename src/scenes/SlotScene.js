@@ -3,7 +3,6 @@ import {scrmng} from "../core/scrmng.js";
 import {effects} from "../core/effects.js";
 
 
-
 export class SlotScene extends Scene {
     constructor() {
         super({key: "SlotScene"});
@@ -28,7 +27,7 @@ export class SlotScene extends Scene {
         const videoTime = 8200;
         const hideSceneTime = 0;
 
-        if (this.videoName == '50') {
+        if (this.videoName ==  '60') {
             this.time.delayedCall(videoTime - hideSceneTime, () => {
 
                 spin_mig_congratulation.play();
